@@ -15,7 +15,7 @@ const phases = [
 export default function ProcessPage() {
   return (
     <>
-      <PageIntro eyebrow="Process" title="A clear course from idea to launch."><p>Most focused sites take roughly four to six weeks once content is ready. You will always know what is happening, what we need from you, and what decision comes next.</p></PageIntro>
+      <PageIntro title="A clear course from idea to launch."><p>Most focused sites take roughly four to six weeks once content is ready. You will always know what is happening, what we need from you, and what decision comes next.</p></PageIntro>
       <section className="pb-24 sm:pb-32"><div className="site-shell">
         {phases.map((phase) => (
           <article key={phase.number} className="grid gap-5 border-t border-[#0b2530]/13 py-9 lg:grid-cols-[0.28fr_0.7fr_1.1fr_0.8fr] lg:gap-10 lg:py-12">

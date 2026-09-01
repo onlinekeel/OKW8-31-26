@@ -8,7 +8,7 @@ export const metadata: Metadata = { title: "About", description: "Online Keel is
 export default function AboutPage() {
   return (
     <>
-      <PageIntro eyebrow="About Online Keel" title="Good design gives good work somewhere solid to stand."><p>Online Keel is an independent web studio for people who care deeply about what they do—and want an online presence built with the same level of intention.</p></PageIntro>
+      <PageIntro title="Good design gives good work somewhere solid to stand."><p>Online Keel is an independent web studio for people who care deeply about what they do—and want an online presence built with the same level of intention.</p></PageIntro>
       <section className="pb-24 sm:pb-32"><div className="site-shell grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="rounded-[2rem] bg-[#0b2530] p-8 text-[#f7f4ec] sm:p-12 lg:p-14">
           <p className="eyebrow text-[#a9cec5]">The name</p><h2 className="mt-6 max-w-2xl font-serif text-4xl leading-[1.05] tracking-[-0.04em] sm:text-6xl">A keel is mostly unseen. Its effect is not.</h2>

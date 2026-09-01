@@ -15,7 +15,7 @@ const directions = [
 export default function WorkPage() {
   return (
     <>
-      <PageIntro eyebrow="Work" title="Distinct problems deserve distinct websites."><p>Online Keel is a new studio built on a simple belief: good design begins with the real job the website needs to do. These are the kinds of directions we shape with clients.</p></PageIntro>
+      <PageIntro title="Distinct problems deserve distinct websites."><p>Online Keel is a new studio built on a simple belief: good design begins with the real job the website needs to do. These are the kinds of directions we shape with clients.</p></PageIntro>
       <section className="pb-24 sm:pb-32"><div className="site-shell grid gap-7">
         {directions.map((item, index) => (
           <article key={item.number} className={`overflow-hidden rounded-[2rem] ${item.tone}`}>

@@ -12,10 +12,9 @@ export function ProjectForm() {
     const email = String(data.get("email") || "");
     const projectType = String(data.get("projectType") || "");
     const timeline = String(data.get("timeline") || "");
-    const budget = String(data.get("budget") || "");
     const details = String(data.get("details") || "");
     const subject = `Website inquiry from ${name}`;
-    const body = [`Name: ${name}`, `Email: ${email}`, `Project type: ${projectType}`, `Ideal timeline: ${timeline}`, `Working budget: ${budget}`, "", "Project notes:", details].join("\n");
+    const body = [`Name: ${name}`, `Email: ${email}`, `Project type: ${projectType}`, `Ideal timeline: ${timeline}`, "", "Project notes:", details].join("\n");
     window.location.href = `mailto:${site.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   }
 
@@ -31,9 +30,6 @@ export function ProjectForm() {
         </label>
         <label className="form-label">Ideal timeline
           <select className="form-control" name="timeline" defaultValue=""><option value="">Flexible</option><option>Within 4–6 weeks</option><option>Within 2–3 months</option><option>I have a launch date</option></select>
-        </label>
-        <label className="form-label sm:col-span-2">Working budget
-          <select className="form-control" name="budget" defaultValue=""><option value="">Not sure yet</option><option>$1,995–$2,750</option><option>$2,750–$4,500</option><option>$4,500+</option></select>
         </label>
         <label className="form-label sm:col-span-2">Tell us about the project
           <textarea className="form-control min-h-36 resize-y" name="details" placeholder="What do you do, who is the site for, and what should it help you accomplish?" required />
