@@ -28,7 +28,7 @@ export default function Home() {
               <div className="absolute right-[-1.5rem] top-[-1.5rem] size-28 rounded-full border border-[#99c2b9]/30" />
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a9cec5]">A strong site should</p>
               <div className="mt-10 grid gap-7">
-                {[["01", "Sound like you", "A clear voice, not filler copy."], ["02", "Guide people", "Simple paths to the next right action."], ["03", "Earn confidence", "Thoughtful details that make the work feel established."]].map(([number, title, copy]) => (
+                {[["01", "Sound like you", "A clear voice that is authentically you"], ["02", "Guide people", "Simple paths for your customers to see your work."], ["03", "Earn confidence", "Thoughtful details that make the work feel established."]].map(([number, title, copy]) => (
                   <div key={number} className="grid grid-cols-[2.5rem_1fr] gap-4 border-t border-white/14 pt-5">
                     <span className="font-serif text-lg text-[#c7a86f]">{number}</span>
                     <div><p className="font-serif text-2xl">{title}</p><p className="mt-1 text-sm leading-6 text-white/57">{copy}</p></div>
