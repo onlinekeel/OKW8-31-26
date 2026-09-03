@@ -49,9 +49,10 @@ export default function Home() {
 
       <section className="section-space bg-white">
         <div className="site-shell">
-          <div className="grid gap-8 lg:grid-cols-[0.7fr_1.3fr] lg:items-end">
-            <p className="eyebrow">What we build</p>
-            <div><h2 className="section-title max-w-4xl">A useful website first. A beautiful one at the same time.</h2><p className="mt-6 max-w-2xl text-lg leading-8 text-[#617278]">Every project starts with what the site needs to do, then we shape the words, structure, and visual system around that goal.</p></div>
+          <div className="mx-auto max-w-4xl text-center">
+            <p className="eyebrow text-left">What we build</p>
+            <h2 className="section-title mt-5">A useful and beautiful website at the same time.</h2>
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#617278]">Every project starts with what the site needs to do, then we shape the words, structure, and visual system around that goal.</p>
           </div>
           <div className="mt-14 grid gap-5 lg:grid-cols-3">
             {services.map((service) => {
