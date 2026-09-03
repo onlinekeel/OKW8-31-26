@@ -15,7 +15,7 @@ const offers = [
 export default function ServicesPage() {
   return (
     <>
-      <PageIntro title="A website built around the work you want more of."><p>We bring strategy, writing support, design, and development into one focused process—so the finished site is cohesive from the first headline to the final click.</p></PageIntro>
+      <PageIntro title="A website built around your hard work."><p>We bring strategy, writing support, design, and development into one focused process—so the finished site is cohesive from the first headline to the final click.</p></PageIntro>
       <section className="pb-24 sm:pb-32"><div className="site-shell grid gap-5">
         {offers.map((offer) => (
           <article id={offer.id} key={offer.id} className="scroll-mt-28 rounded-[2rem] border border-[#0b2530]/12 bg-white p-7 sm:p-10 lg:p-12">
