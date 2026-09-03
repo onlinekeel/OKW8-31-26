@@ -3,7 +3,7 @@ import { Anchor, Compass, Eye, Waves } from "lucide-react";
 import { CtaBand } from "@/components/cta-band";
 import { PageIntro } from "@/components/page-intro";
 
-export const metadata: Metadata = { title: "About", description: "Online Keel is an independent web studio creating thoughtful, commercially sound websites with clear ownership and lasting value." };
+export const metadata: Metadata = { title: "About", description: "Online Keel is an independent web studio creating thoughtfully designed websites that are customized to our clients needs." };
 
 export default function AboutPage() {
   return (
