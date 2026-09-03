@@ -29,7 +29,7 @@ export default function ProcessPage() {
       <section className="section-space bg-[#eef1ec]"><div className="site-shell grid gap-12 lg:grid-cols-[0.78fr_1.22fr]">
         <div><p className="eyebrow">What keeps it moving</p><h2 className="section-title mt-5">A good collaboration has a few simple rules.</h2></div>
         <div className="grid gap-5 sm:grid-cols-2">
-          {[["One point of contact", "Clear ownership keeps feedback coherent and decisions timely."], ["Real content early", "The sooner we work with your actual words and images, the better the design becomes."], ["Focused feedback", "Specific reactions tied to the project goals produce stronger refinements."], ["No mystery handoff", "You receive direct account access and a site designed to remain yours."]].map(([title, copy]) => <article key={title} className="rounded-3xl bg-white p-7"><h3 className="font-serif text-2xl text-[#0b2530]">{title}</h3><p className="mt-3 text-sm leading-6 text-[#64767b]">{copy}</p></article>)}
+          {[["Your vision", "Clear ownership of your vision keeps feedback coherent and decisions timely."], ["Real content early", "The sooner we work with your actual words and images, the better the design becomes."], ["Focused feedback", "Specific reactions tied to the project goals produce stronger refinements."], ["No mystery handoff", "You receive direct account access and have full ownership of the site with instructions on how to manage it."]].map(([title, copy]) => <article key={title} className="rounded-3xl bg-white p-7"><h3 className="font-serif text-2xl text-[#0b2530]">{title}</h3><p className="mt-3 text-sm leading-6 text-[#64767b]">{copy}</p></article>)}
         </div>
       </div></section>
       <CtaBand />
