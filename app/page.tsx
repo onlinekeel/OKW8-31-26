@@ -52,7 +52,7 @@ export default function Home() {
           <div>
             <p className="eyebrow">What we build</p>
             <h2 className="mt-5 font-serif text-[clamp(2.35rem,4vw,3.25rem)] leading-[1.05] tracking-[-0.045em] text-[#0b2530] lg:whitespace-nowrap">A useful and beautiful website at the same time.</h2>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-[#617278]">Every project starts with what the site needs to do, then we shape the words, structure, and visual system around that goal.</p>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-[#617278]">Every project starts with what the site needs to do, then we shape the words, structure, and visuals around that goal.</p>
           </div>
           <div className="mt-14 grid gap-5 lg:grid-cols-3">
             {services.map((service) => {
@@ -73,7 +73,7 @@ export default function Home() {
       <section className="section-space bg-[#eef1ec]">
         <div className="site-shell grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div>
-            <p className="eyebrow">Why Online Keel</p><h2 className="section-title mt-5">Calm process. Clear choices. No digital drift.</h2>
+            <p className="eyebrow">Why Online Keel</p><h2 className="section-title mt-5">Calm process. Clear choices. Tailored to you.</h2>
             <p className="mt-6 max-w-xl text-lg leading-8 text-[#617278]">You do not need to become a web expert. We keep the process focused, explain the tradeoffs, and hand you a site you can confidently own.</p>
             <Link href="/process" className="button-secondary mt-8">See the process <ArrowRight className="size-4" /></Link>
           </div>
