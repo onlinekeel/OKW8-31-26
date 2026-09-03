@@ -7,9 +7,9 @@ import { PageIntro } from "@/components/page-intro";
 export const metadata: Metadata = { title: "Work", description: "Explore the kinds of author, expert, and small-business website challenges Online Keel is built to solve." };
 
 const directions = [
-  { number: "01", label: "Author platform direction", title: "From a stack of book links to a world readers can enter.", copy: "For an author, the website should connect every title to a larger story: who wrote it, why it matters, and where a reader should go next.", result: "Clear book discovery · stronger author identity · reader connection", tone: "bg-[#cdded8]" },
-  { number: "02", label: "Expert brand direction", title: "From impressive experience to an offer people understand.", copy: "For a speaker or consultant, the site turns credentials into a useful narrative and gives organizers, clients, and media a direct next step.", result: "Sharper positioning · useful proof · focused inquiries", tone: "bg-[#e7dcc8]" },
-  { number: "03", label: "Local business direction", title: "From service list to a reason to choose you.", copy: "For a growing business, the site makes the difference tangible—then removes friction between a good prospect and a real conversation.", result: "More confidence · easier navigation · better-fit leads", tone: "bg-[#d8e3e7]" },
+  { number: "01", label: "Author platform direction", title: "We transform a stack of book links into a curated space readers can digitally enter.", copy: "For an author, the website should connect every title to a larger story: who wrote it, why it matters, and where a reader should go next.", result: "Clear book discovery · stronger author identity · reader connection", tone: "bg-[#cdded8]" },
+  { number: "02", label: "Expert brand direction", title: "We showcase the impressive experience you provide into an offer people understand.", copy: "For a speaker or consultant, the site turns credentials into a useful narrative and gives organizers, clients, and media a direct next step.", result: "Sharper positioning · useful proof · focused inquiries", tone: "bg-[#e7dcc8]" },
+  { number: "03", label: "Local business direction", title: "We highlight the goods and services you offer, so your customers can understand why they need you.", copy: "For a growing business, the site makes the difference tangible—then removes friction between a good prospect and a real conversation.", result: "More confidence · easier navigation · better-fit leads", tone: "bg-[#d8e3e7]" },
 ];
 
 export default function WorkPage() {
