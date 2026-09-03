@@ -47,12 +47,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-space bg-white">
+      <section className="bg-white pb-20 pt-10 sm:pb-24 sm:pt-14 lg:pb-28 lg:pt-16">
         <div className="site-shell">
-          <div className="mx-auto max-w-4xl text-center">
-            <p className="eyebrow text-left">What we build</p>
-            <h2 className="section-title mt-5">A useful and beautiful website at the same time.</h2>
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-[#617278]">Every project starts with what the site needs to do, then we shape the words, structure, and visual system around that goal.</p>
+          <div>
+            <p className="eyebrow">What we build</p>
+            <h2 className="mt-5 font-serif text-[clamp(2.35rem,4vw,3.25rem)] leading-[1.05] tracking-[-0.045em] text-[#0b2530] lg:whitespace-nowrap">A useful and beautiful website at the same time.</h2>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-[#617278]">Every project starts with what the site needs to do, then we shape the words, structure, and visual system around that goal.</p>
           </div>
           <div className="mt-14 grid gap-5 lg:grid-cols-3">
             {services.map((service) => {
