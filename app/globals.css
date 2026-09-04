@@ -29,7 +29,7 @@ button, a { outline-offset: 4px; }
 ::selection { background: #9fc8bf; color: #0b2530; }
 .site-shell { width: min(100% - 2rem, 76rem); margin-inline: auto; }
 .section-space { padding-block: clamp(4rem, 10vw, 8rem); }
-.page-intro { padding-block: clamp(4.25rem, 10vw, 8.5rem) clamp(3.75rem, 8vw, 7rem); }
+.page-intro { padding-top: 3.5rem; padding-bottom: clamp(3.75rem, 8vw, 7rem); }
 .eyebrow { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.19em; text-transform: uppercase; color: #668078; }
 .display-title { font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif; font-size: clamp(2.75rem, 11vw, 6.5rem); line-height: 1.04; letter-spacing: -0.045em; color: #0b2530; overflow-wrap: anywhere; }
 .section-title { font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif; font-size: clamp(2.3rem, 9vw, 4.6rem); line-height: 1.06; letter-spacing: -0.04em; color: #0b2530; overflow-wrap: anywhere; }
@@ -56,7 +56,9 @@ button, a { outline-offset: 4px; }
   .service-card { min-height: 0; border-radius: 1.5rem; padding: 1.5rem; }
 }
 @media (min-width: 640px) {
+  .page-intro { padding-top: 6rem; }
   .display-title { line-height: 0.98; }
   .section-title { line-height: 1; }
 }
+@media (min-width: 1024px) { .page-intro { padding-top: 7rem; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; } }
