@@ -7,15 +7,15 @@ import { PageIntro } from "@/components/page-intro";
 export const metadata: Metadata = { title: "Services", description: "Custom websites for authors, experts, speakers, and growing businesses, with focused options and practical post-launch support." };
 
 const offers = [
-  { id: "authors", number: "01", label: "For authors", title: "Author Platform", copy: "A confident home for your books and your wider body of work—designed to serve both loyal readers and people discovering you for the first time.", items: ["Up to five core pages", "Book pages and purchase links", "Author bio, press, and events", "Reader contact or newsletter pathway", "Mobile design and basic SEO", "Two rounds of refinements"] },
-  { id: "experts", number: "02", label: "For speakers & experts", title: "Expert Platform", copy: "A strategic site that turns your expertise into a clear story and makes it easy to understand, trust, and hire you.", items: ["Messaging and page strategy", "Speaking, consulting, or media pages", "Lead-focused contact pathways", "Proof, credentials, and featured work", "Mobile design and basic SEO", "Two rounds of refinements"] },
+  { id: "authors", number: "01", label: "For authors", title: "Author Platform", copy: "A confident home for your books and your wider body of work—designed to serve both loyal readers and people discovering you for the first time.", items: ["Custom site architecture", "Book pages and purchase links", "Author bio, press, and events", "Reader contact or newsletter pathway", "Mobile design and basic SEO", "Two rounds of refinements"] },
+  { id: "experts", number: "02", label: "For speakers & experts", title: "Expert Platform", copy: "A strategic site that turns your expertise into a clear story and makes it easy to understand, trust, and hire you.", items: ["Custom site architecture", "Speaking, consulting, or media pages", "Lead-focused contact pathways", "Proof, credentials, and featured work", "Mobile design and basic SEO", "Two rounds of refinements"] },
   { id: "businesses", number: "03", label: "For growing businesses", title: "Business Website", copy: "A custom marketing site for a business that has outgrown its starter presence and needs its website to earn more confidence.", items: ["Custom site architecture", "Service and conversion pages", "Focused calls to action", "Contact and inquiry pathways", "Mobile design and basic SEO", "Launch support and handoff"] },
 ];
 
 export default function ServicesPage() {
   return (
     <>
-      <PageIntro title="A website built around your hard work."><p>We bring strategy, writing support, design, and development into one focused process—so the finished site is cohesive from the first headline to the final click.</p></PageIntro>
+      <PageIntro title="A website built around the work you want more of."><p>We bring strategy, writing support, design, and development into one focused process—so the finished site is cohesive from the first headline to the final click.</p></PageIntro>
       <section className="pb-24 sm:pb-32"><div className="site-shell grid gap-5">
         {offers.map((offer) => (
           <article id={offer.id} key={offer.id} className="scroll-mt-28 rounded-[2rem] border border-[#0b2530]/12 bg-white p-7 sm:p-10 lg:p-12">
