@@ -11,27 +11,27 @@ const services = [
 export default function Home() {
   return (
     <>
-      <section className="overflow-hidden bg-[#f7f4ec] py-18 sm:py-24 lg:py-28">
-        <div className="site-shell grid gap-12 lg:grid-cols-[1.18fr_0.82fr] lg:items-center">
+      <section className="overflow-hidden bg-[#f7f4ec] py-14 sm:py-24 lg:py-28">
+        <div className="site-shell grid gap-9 sm:gap-12 lg:grid-cols-[1.18fr_0.82fr] lg:items-center">
           <div>
             <p className="eyebrow">Independent web studio · Orlando, Florida</p>
-            <h1 className="mt-6 max-w-4xl font-serif text-[clamp(3.5rem,8vw,7.4rem)] leading-[0.89] tracking-[-0.055em] text-[#0b2530]">Websites with a steady point of view.</h1>
-            <p className="mt-8 max-w-2xl text-lg leading-8 text-[#52666d] sm:text-xl">Online Keel creates clean, custom websites for authors, experts, and growing businesses—so the quality of your online presence finally matches the quality of your work.</p>
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+            <h1 className="mt-5 max-w-4xl font-serif text-5xl leading-[0.98] tracking-[-0.045em] text-[#0b2530] sm:mt-6 sm:text-[clamp(4.25rem,8vw,7.4rem)] sm:leading-[0.9] sm:tracking-[-0.055em]">Websites with a steady point of view.</h1>
+            <p className="mt-6 max-w-2xl text-base leading-7 text-[#52666d] sm:mt-8 sm:text-xl sm:leading-8">Online Keel creates clean, custom websites for authors, experts, and growing businesses—so the quality of your online presence finally matches the quality of your work.</p>
+            <div className="mt-8 flex flex-col gap-3 sm:mt-9 sm:flex-row">
               <Link href="/contact" className="button-primary">Start a project <ArrowRight className="size-4" /></Link>
               <Link href="/services" className="button-secondary">Explore services</Link>
             </div>
           </div>
           <div className="relative lg:pl-10">
-            <div className="relative overflow-hidden rounded-[2.25rem] bg-[#0b2530] p-7 text-[#f7f4ec] shadow-[0_30px_100px_rgba(11,37,48,0.18)] sm:p-10">
+            <div className="relative overflow-hidden rounded-[1.75rem] bg-[#0b2530] p-6 text-[#f7f4ec] shadow-[0_24px_70px_rgba(11,37,48,0.15)] sm:rounded-[2.25rem] sm:p-10 sm:shadow-[0_30px_100px_rgba(11,37,48,0.18)]">
               <div className="absolute right-[-5rem] top-[-5rem] size-52 rounded-full border border-[#99c2b9]/25" />
               <div className="absolute right-[-1.5rem] top-[-1.5rem] size-28 rounded-full border border-[#99c2b9]/30" />
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#a9cec5]">A strong site should</p>
-              <div className="mt-10 grid gap-7">
+              <div className="mt-8 grid gap-6 sm:mt-10 sm:gap-7">
                 {[["01", "Sound like you", "A clear voice that is authentically you"], ["02", "Guide people", "Simple paths for your customers to see your work."], ["03", "Earn confidence", "Thoughtful details that make the work feel established."]].map(([number, title, copy]) => (
                   <div key={number} className="grid grid-cols-[2.5rem_1fr] gap-4 border-t border-white/14 pt-5">
                     <span className="font-serif text-lg text-[#c7a86f]">{number}</span>
-                    <div><p className="font-serif text-2xl">{title}</p><p className="mt-1 text-sm leading-6 text-white/57">{copy}</p></div>
+                    <div><p className="font-serif text-2xl">{title}</p><p className="mt-1 text-base leading-6 text-white/62">{copy}</p></div>
                   </div>
                 ))}
               </div>
@@ -41,26 +41,26 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="border-y border-[#0b2530]/10 bg-white py-6">
-        <div className="site-shell flex flex-wrap items-center justify-center gap-x-7 gap-y-3 text-xs font-semibold uppercase tracking-[0.18em] text-[#64767b] sm:justify-between">
-          <span>Authors</span><span className="text-[#b99a62]">✦</span><span>Speakers</span><span className="text-[#b99a62]">✦</span><span>Consultants</span><span className="text-[#b99a62]">✦</span><span>Local brands</span><span className="text-[#b99a62]">✦</span><span>Independent experts</span>
+      <section className="border-y border-[#0b2530]/10 bg-white py-5 sm:py-6">
+        <div className="site-shell flex flex-wrap items-center justify-center gap-x-3 gap-y-2.5 text-[0.7rem] font-semibold uppercase tracking-[0.14em] text-[#64767b] sm:justify-between sm:gap-x-7 sm:gap-y-3 sm:text-xs sm:tracking-[0.18em]">
+          {["Authors", "Speakers", "Consultants", "Local brands", "Independent experts"].map((label, index) => <span key={label} className="inline-flex items-center gap-3">{label}{index < 4 ? <span className="text-[#b99a62]">✦</span> : null}</span>)}
         </div>
       </section>
 
-      <section className="bg-white pb-20 pt-10 sm:pb-24 sm:pt-14 lg:pb-28 lg:pt-16">
+      <section className="bg-white pb-16 pt-9 sm:pb-24 sm:pt-14 lg:pb-28 lg:pt-16">
         <div className="site-shell">
           <div>
             <p className="eyebrow">What we build</p>
-            <h2 className="mt-5 font-serif text-[clamp(2.35rem,4vw,3.25rem)] leading-[1.05] tracking-[-0.045em] text-[#0b2530] lg:whitespace-nowrap">A useful and beautiful website at the same time.</h2>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-[#617278]">Every project starts with what the site needs to do, then we shape the words, structure, and visuals around that goal.</p>
+            <h2 className="mt-5 font-serif text-[2.25rem] leading-[1.08] tracking-[-0.04em] text-[#0b2530] sm:text-[clamp(2.75rem,4vw,3.25rem)] sm:leading-[1.05] lg:whitespace-nowrap">A useful and beautiful website at the same time.</h2>
+            <p className="mt-5 max-w-2xl text-base leading-7 text-[#617278] sm:mt-6 sm:text-lg sm:leading-8">Every project starts with what the site needs to do, then we shape the words, structure, and visuals around that goal.</p>
           </div>
-          <div className="mt-14 grid gap-5 lg:grid-cols-3">
+          <div className="mt-10 grid gap-5 sm:mt-14 lg:grid-cols-3">
             {services.map((service) => {
               const Icon = service.icon;
               return (
                 <article key={service.title} className="service-card group">
                   <span className="grid size-11 place-items-center rounded-full bg-[#dce9e4] text-[#0b2530]"><Icon className="size-5" strokeWidth={1.6} /></span>
-                  <h3 className="mt-8 font-serif text-3xl tracking-[-0.025em] text-[#0b2530]">{service.title}</h3>
+                  <h3 className="mt-7 font-serif text-[2rem] tracking-[-0.025em] text-[#0b2530] sm:mt-8 sm:text-3xl">{service.title}</h3>
                   <p className="mt-4 text-base leading-7 text-[#64767b]">{service.copy}</p>
                   <Link href={service.href} className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-[#0b2530]">See what’s included <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" /></Link>
                 </article>
@@ -71,10 +71,10 @@ export default function Home() {
       </section>
 
       <section className="section-space bg-[#eef1ec]">
-        <div className="site-shell grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+        <div className="site-shell grid gap-10 sm:gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div>
             <p className="eyebrow">Why Online Keel</p><h2 className="section-title mt-5">Calm process. Clear choices. Tailored to you.</h2>
-            <p className="mt-6 max-w-xl text-lg leading-8 text-[#617278]">You do not need to become a web expert. We keep the process focused, explain the tradeoffs, and hand you a site you can confidently own.</p>
+            <p className="mt-5 max-w-xl text-base leading-7 text-[#617278] sm:mt-6 sm:text-lg sm:leading-8">You do not need to become a web expert. We keep the process focused, explain the tradeoffs, and hand you a site you can confidently own.</p>
             <Link href="/process" className="button-secondary mt-8">See the process <ArrowRight className="size-4" /></Link>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
@@ -85,7 +85,7 @@ export default function Home() {
               { icon: Compass, title: "Ownership stays with you", copy: "Your domain, hosting, accounts, and finished website remain in your control." },
             ].map((item) => {
               const Icon = item.icon;
-              return <article key={item.title} className="rounded-3xl border border-[#0b2530]/10 bg-white p-6 sm:p-7"><Icon className="size-5 text-[#5f9188]" strokeWidth={1.7} /><h3 className="mt-5 font-serif text-2xl text-[#0b2530]">{item.title}</h3><p className="mt-3 text-sm leading-6 text-[#64767b]">{item.copy}</p></article>;
+              return <article key={item.title} className="rounded-3xl border border-[#0b2530]/10 bg-white p-6 sm:p-7"><Icon className="size-5 text-[#5f9188]" strokeWidth={1.7} /><h3 className="mt-5 font-serif text-2xl text-[#0b2530]">{item.title}</h3><p className="mt-3 text-base leading-7 text-[#64767b]">{item.copy}</p></article>;
             })}
           </div>
         </div>

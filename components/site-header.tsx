@@ -13,7 +13,7 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-[#0b2530]/10 bg-[#f7f4ec]/90 backdrop-blur-xl">
-      <div className="site-shell flex h-[76px] items-center justify-between">
+      <div className="site-shell flex h-[68px] items-center justify-between sm:h-[76px]">
         <BrandMark />
         <nav aria-label="Primary navigation" className="hidden items-center gap-1 md:flex">
           {navItems.map((item) => (
@@ -34,19 +34,20 @@ export function SiteHeader() {
           aria-expanded={open}
           aria-controls="mobile-navigation"
           aria-label={open ? "Close navigation" : "Open navigation"}
-          className="grid size-11 place-items-center rounded-full border border-[#0b2530]/15 text-[#0b2530] md:hidden"
+          className="grid size-11 shrink-0 place-items-center rounded-full border border-[#0b2530]/15 bg-white/35 text-[#0b2530] md:hidden"
         >
           {open ? <X className="size-5" /> : <Menu className="size-5" />}
         </button>
       </div>
       {open ? (
-        <nav id="mobile-navigation" aria-label="Mobile navigation" className="site-shell grid gap-1 border-t border-[#0b2530]/10 py-4 md:hidden">
+        <nav id="mobile-navigation" aria-label="Mobile navigation" className="site-shell grid gap-1 border-t border-[#0b2530]/10 bg-[#f7f4ec]/98 py-4 md:hidden">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
               onClick={() => setOpen(false)}
-              className="rounded-xl px-3 py-3 text-base font-medium text-[#173640] hover:bg-white"
+              aria-current={pathname === item.href ? "page" : undefined}
+              className="rounded-xl px-3 py-3.5 text-base font-medium text-[#173640] hover:bg-white aria-[current=page]:bg-white"
             >
               {item.label}
             </Link>
