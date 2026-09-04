@@ -91,19 +91,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-space bg-white">
-        <div className="site-shell">
-          <div className="flex flex-col gap-6 border-b border-[#0b2530]/12 pb-9 sm:flex-row sm:items-end sm:justify-between">
-            <div><p className="eyebrow">From first call to launch</p><h2 className="section-title mt-5">A four-part path to a better site.</h2></div>
-            <Link href="/process" className="text-link">Full process <ArrowRight className="size-4" /></Link>
-          </div>
-          <div className="grid lg:grid-cols-4">
-            {[["01", "Discover", "Goals, audience, content, and what success should look like."], ["02", "Direct", "A clear structure and visual direction before the full build."], ["03", "Build", "Responsive pages, refined copy, and practical SEO foundations."], ["04", "Launch", "Final checks, handoff, and a clean path for future updates."]].map(([number, title, copy]) => (
-              <article key={number} className="border-b border-[#0b2530]/12 py-8 lg:border-b-0 lg:border-r lg:px-7 first:lg:pl-0 last:lg:border-r-0 last:lg:pr-0"><p className="font-serif text-xl text-[#b08f54]">{number}</p><h3 className="mt-5 font-serif text-3xl text-[#0b2530]">{title}</h3><p className="mt-3 text-sm leading-6 text-[#64767b]">{copy}</p></article>
-            ))}
-          </div>
-        </div>
-      </section>
       <CtaBand />
     </>
   );
